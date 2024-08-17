@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+}
+
+section#welcome {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 35px;
+    width: 100vw;
+    padding: 15px;
+    text-align: center;
+    font-size: 30px;
+}
+
+section#image-home {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70vh;
+    width: 90vw;
+    padding: 15px;
+
+    text-align: center;
+    font-size: 30px;
+
+    background: url('../imagens/igreja-background.JPG') no-repeat top center;
+    background-size: cover;
+    opacity: 0.8;
+
+    border-radius: 2%;
+}
+
+section#paradise {
+    position: absolute;
+    top: 57%;
+    left: 6%;
+    height: 200px;
+    width: 300px;
+    
+    text-align: center;
+    font-size: 50px;
+}
