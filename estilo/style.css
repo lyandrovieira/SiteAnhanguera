@@ -1,64 +1,82 @@
 @charset "UTF-8";
 
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+:root {
+    --cor0: white;
+    --cor1: #c7c5c5;
+    --cor2: #8e8686;
+    --cor3: #6b6464;
+    --cor4: #4c4646;
+    --cor5: #302e2e;
+    --cor6: #242121;
+    --cor7: black;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: Arial, Verdana, Helvetica, sans-serif;
 }
 
-html, body {
-    height: 100vh;
-    width: 100vw;
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
-    background-size: cover;
-    background-attachment: scroll;
+    background-color: var(--cor2);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor6));
+    height: 90px;
+    padding: 20px;
+}
+
+header h1 {
+    color: var(--cor0);
+    font-family: var(--fonte-destaque);
+    font-size: 2.7em;
+    text-align: center;
+    padding-top: 20px;
+}
+
+nav {
+    background-color: var(--cor6);
+    padding: 10px;
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.26);
+}
+
+nav > a {
+    color: var(--cor0);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+nav > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor7);
 }
 
 main {
-    position: relative;
-    height: 100vh;
+    background-color: var(--cor0);
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px 10px;
 }
 
-section#welcome {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 35px;
-    width: 100vw;
-    padding: 15px;
-    text-align: center;
-    font-size: 30px;
+article {
+    font-family: var(--fonte-padrao);
+    text-align: justify;
+    line-height: 1.5;
 }
 
-section#image-home {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 70vh;
-    width: 90vw;
-    padding: 15px;
-
+footer {
+    background-color: var(--cor6);
+    color: var(--cor1);
+    font-family: var(--fonte-padrao);
+    font-size: 0.8em;
     text-align: center;
-    font-size: 30px;
-
-    background: url('../imagens/igreja-background.JPG') no-repeat top center;
-    background-size: cover;
-    opacity: 0.8;
-
-    border-radius: 2%;
-}
-
-section#paradise {
-    position: absolute;
-    top: 57%;
-    left: 6%;
-    height: 200px;
-    width: 300px;
-    
-    text-align: center;
-    font-size: 50px;
+    padding: 5px;
 }
