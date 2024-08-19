@@ -66,12 +66,6 @@ main {
     padding: 20px 10px;
 }
 
-article {
-    font-family: var(--fonte-padrao);
-    text-align: justify;
-    line-height: 1.5;
-}
-
 footer {
     background-color: var(--cor6);
     color: var(--cor1);
@@ -79,4 +73,39 @@ footer {
     font-size: 0.8em;
     text-align: center;
     padding: 5px;
+}
+
+table {
+    width: 445px;
+    font-family: var(--fonte-padrao);
+    border-bottom: 1px solid var(--cor6);
+    margin: auto;
+}
+
+caption {
+    font-size: 1.1em;
+    padding: 5px;
+    background-color: var(--cor2);
+}
+
+th {    
+    color: var(--cor1);
+    background-color: var(--cor6);
+    padding: 5px;
+}
+
+tr:nth-child(2n) {
+    background-color: var(--cor1);
+}
+
+td {
+    padding: 3px;
+}
+
+td.telefone {
+    width: 120px;
+}
+
+div.container {
+    overflow-x: auto;
 }
