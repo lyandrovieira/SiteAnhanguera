@@ -24,8 +24,8 @@ body {
 }
 
 header {
-    background-image: linear-gradient(to bottom, var(--cor3), var(--cor6));
-    height: 90px;
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor6));
+    height: 110px;
     padding: 20px;
 }
 
@@ -101,36 +101,29 @@ strong {
     background-color: var(--cor5);
 }
 
-div {
+div.imagens {
     padding: 14px;
-}
-
-div#teste {
-    padding: 18px;
+    margin-bottom: 20px;
 }
 
 div.botao {
     text-align: center;
+    margin-bottom: 30px;
 }
 
 img {
-    width: 190px;
-    height: 127px;
+    width: 250px;
+    height: 167px;
     transition: scale 0.3s;
 }
 
-img.teste-tamanho {
-    width: 380px;
-    height: 254px;
-    transition: scale 0.3s;
+img.retrato {
+    width: 175px;
+    height: 250px;
 }
 
 img:hover {
     scale: 1.8;
-}
-
-img.teste-tamanho:hover {
-    scale: 1.15;
 }
 
 a {

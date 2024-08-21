@@ -24,8 +24,8 @@ body {
 }
 
 header {
-    background-image: linear-gradient(to bottom, var(--cor3), var(--cor6));
-    height: 90px;
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor6));
+    height: 110px;
     padding: 20px;
 }
 
