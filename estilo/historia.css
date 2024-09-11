@@ -15,3 +15,7 @@
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: Merriweather, cursive;
 }
+
+nav {
+    display: none;
+}

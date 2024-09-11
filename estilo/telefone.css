@@ -16,6 +16,10 @@
     --fonte-destaque: Merriweather, cursive;
 }
 
+nav {
+    display: none;
+}
+
 table {
     width: 450px;
     font-family: var(--fonte-padrao);
