@@ -57,7 +57,7 @@ img:hover {
     scale: 1.8;
 }
 
-a {
+a.botao {
     font-family: var(--fonte-padrao);
     font-weight: bold;
     text-decoration: none;
@@ -67,7 +67,7 @@ a {
     background-color: var(--cor5);
 }
 
-a:hover {
+a.botao:hover {
     color: var(--cor6);
     background-color: var(--cor3);
 }

@@ -55,21 +55,26 @@ span#burguer:hover {
 
 nav {
     background-color: var(--cor6);
-    padding: 10px;
     box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.26);
+    display: block;
 }
 
-nav > a {
+nav > ul {
+    list-style-type: none;
+}
+
+nav > ul > li > a {
     color: var(--cor0);
-    padding: 10px;
-    border-radius: 5px;
+    padding: 7px 0px;
     text-decoration: none;
+    text-align: center;
     font-family: var(--fonte-padrao);
     font-weight: bold;
     transition-duration: .5s;
+    display: block;   
 }
 
-nav > a:hover {
+nav > ul > li > a:hover {
     background-color: var(--cor3);
     color: var(--cor7);
 }
