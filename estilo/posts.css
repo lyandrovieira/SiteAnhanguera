@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+nav {
+    display: none;
+}
+
+main > h2 {
+    text-align: left;
+    margin: 10px 0px
+}
+
+img {
+
+}
+
+figcaption {
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    margin: 5px 0px;
+}
+
+.fonte {
+    font-family: var(--fonte-padrao);
+    font-size: 0.8em;
+}
+
+#referencia {
+    margin: 0px 0px 10px 0px;
+}
+
+ul > li {
+    list-style-type: none;
+    margin: 5px 0px;
+}
+
+a {
+    font-family: var(--fonte-padrao);
+    text-align: justify;
+    text-decoration: none;
+    color: var(--cor6);
+}
+
+footer {
+    background-color: var(--cor6);
+    color: var(--cor1);
+    font-family: var(--fonte-padrao);
+    font-size: 0.8em;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
