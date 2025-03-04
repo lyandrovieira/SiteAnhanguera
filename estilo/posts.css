@@ -64,6 +64,7 @@ figure > figcaption {
 #referencia {
     margin: 0px 0px 20px 0px;
     max-width: 100%;
+    word-wrap: break-word;
 }
 
 ul > li {
