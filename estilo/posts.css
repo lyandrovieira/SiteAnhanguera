@@ -63,6 +63,7 @@ figure > figcaption {
 
 #referencia {
     margin: 0px 0px 20px 0px;
+    max-width: 100%;
 }
 
 ul > li {
@@ -74,7 +75,6 @@ a {
     font-family: var(--fonte-padrao);
     text-align: justify;
     color: var(--cor6);
-    max-width: 100%;
 }
 
 footer {
