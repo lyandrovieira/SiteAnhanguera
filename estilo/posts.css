@@ -1,42 +1,77 @@
 @charset "UTF-8";
 
+:root {
+    --cor0: white;
+    --cor1: #c7c5c5;
+    --cor2: #8e8686;
+    --cor3: #6b6464;
+    --cor4: #4c4646;
+    --cor5: #302e2e;
+    --cor6: #242121;
+    --cor7: black;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: Merriweather, cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 nav {
     display: none;
 }
 
+main > h1 {
+    font-size: 2.1em;
+}
+
 main > h2 {
+    font-size: 1.8em;
     text-align: left;
     margin: 10px 0px
 }
 
-img {
-
+main > h3 {
+    font-size: 1.7em;
 }
 
-figcaption {
+figure {
+    display: block;
+    text-align: center;
+    margin: 30px 0px 0px 0px;
+}
+
+figure > img {
+    width: 500px;
+}
+
+figure > figcaption {
+    text-align: left;
     font-family: var(--fonte-padrao);
     font-size: 1em;
-    margin: 5px 0px;
+    margin: 0px 0px 5px 0px;
 }
 
 .fonte {
     font-family: var(--fonte-padrao);
     font-size: 0.8em;
+    margin: 0px 0px 20px 0px;
 }
 
 #referencia {
-    margin: 0px 0px 10px 0px;
+    margin: 0px 0px 20px 0px;
 }
 
 ul > li {
     list-style-type: none;
-    margin: 5px 0px;
+    margin: 10px 0px;
 }
 
 a {
     font-family: var(--fonte-padrao);
     text-align: justify;
-    text-decoration: none;
     color: var(--cor6);
 }
 
