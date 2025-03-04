@@ -76,6 +76,8 @@ a {
     font-family: var(--fonte-padrao);
     text-align: justify;
     color: var(--cor6);
+    max-width: 100%;
+    word-wrap: break-word;
 }
 
 footer {
