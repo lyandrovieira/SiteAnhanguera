@@ -11,6 +11,8 @@
     --cor5: #302e2e;
     --cor6: #242121;
     --cor7: black;
+    --cor8: #e9c377;
+    --cor9: #f0b849;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: Merriweather, cursive;
@@ -22,17 +24,27 @@
 }
 
 body {
-    background-color: var(--cor2);
+    /*background-color: var(--cor2);*/
+    background-image: url(../imagens/fundo-do-assoalho-de-madeira_53876-88628.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header {
-    background-image: linear-gradient(to bottom, var(--cor2), var(--cor6));
+    /*background-image: linear-gradient(to bottom, var(--cor2), var(--cor6));*/
+    background-image: url(../imagens/fundo-do-assoalho-de-madeira_53876-88628.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 110px;
     padding: 20px;
 }
 
 header h1 {
-    color: var(--cor0);
+    color: var(--cor7);
     font-family: var(--fonte-destaque);
     font-size: 2.7em;
     text-align: center;
@@ -40,8 +52,8 @@ header h1 {
 }
 
 span#burguer {
-    background-color: var(--cor2);
-    color: var(--cor0);
+    background-color: var(--cor8);
+    color: var(--cor7);
     display: block;
     text-align: center;
     padding: 10px;
@@ -49,12 +61,12 @@ span#burguer {
 }
 
 span#burguer:hover {
-    background-color: var(--cor0);
-    color: var(--cor7);
+    background-color: var(--cor9);
+    color: var(--cor0);
 }
 
 nav {
-    background-color: var(--cor6);
+    background-color: var(--cor8);
     box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.26);
     display: block;
 }
@@ -64,19 +76,19 @@ nav > ul {
 }
 
 nav > ul > li > a {
-    color: var(--cor0);
+    color: var(--cor7);
     padding: 7px 0px;
     text-decoration: none;
     text-align: center;
     font-family: var(--fonte-padrao);
     font-weight: bold;
-    transition-duration: .5s;
+    transition-duration: .4s;
     display: block;   
 }
 
 nav > ul > li > a:hover {
-    background-color: var(--cor3);
-    color: var(--cor7);
+    background-color: var(--cor9);
+    color: var(--cor0);
 }
 
 main {
@@ -85,6 +97,7 @@ main {
     max-width: 800px;
     margin: auto;
     padding: 20px 10px;
+    border-radius: 0px 0px 10px 10px;
 }
 
 main h1 {
@@ -119,8 +132,8 @@ article {
 }
 
 footer {
-    background-color: var(--cor6);
-    color: var(--cor1);
+    background-color: #e9c377;
+    color: var(--cor7);
     font-family: var(--fonte-padrao);
     font-size: 0.8em;
     text-align: center;

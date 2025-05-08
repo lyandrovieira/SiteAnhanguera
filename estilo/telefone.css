@@ -12,6 +12,7 @@ table {
 }
 
 caption {
+    font-family: var(--fonte-padrao);
     font-size: 1.1em;
     padding: 5px;
     background-color: var(--cor2);

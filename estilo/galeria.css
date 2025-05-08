@@ -5,13 +5,13 @@ nav {
 }
 
 strong {
-    font-family: var(--fonte-padrao);
+    font-family: var(--fonte-destaque);
     font-weight: bold;
     text-align: center;
     padding: 6px;
     border-radius: 5px;
-    color: var(--cor1);
-    background-color: var(--cor5);
+    color: var(--cor0);
+    background-color: var(--cor7);
 }
 
 div.imagens {
@@ -42,16 +42,16 @@ img:hover {
 }
 
 a.botao {
-    font-family: var(--fonte-padrao);
+    font-family: var(--fonte-destaque);
     font-weight: bold;
     text-decoration: none;
     padding: 6px;
     border-radius: 5px;
-    color: var(--cor1);
-    background-color: var(--cor5);
+    color: var(--cor0);
+    background-color: var(--cor7);
 }
 
 a.botao:hover {
-    color: var(--cor6);
-    background-color: var(--cor3);
+    color: var(--cor7);
+    background-color: var(--cor2);
 }

@@ -24,17 +24,39 @@ nav {
 }
 
 main > h1 {
+    font-family: var(--fonte-destaque);
     font-size: 2.1em;
+    margin: 0px 0px 25px 0px;
 }
 
 main > h2 {
+    font-family: var(--fonte-destaque);
     font-size: 1.8em;
     text-align: left;
     margin: 10px 0px
 }
 
 main > h3 {
+    font-family: var(--fonte-destaque);
     font-size: 1.7em;
+}
+
+#referencia {
+    margin: 0px 0px 20px 0px;
+}
+
+#referencia > ul > li {
+    list-style-type: none;
+    margin: 0px 0px 10px 0px;
+}
+
+#referencia > ul > li > a {
+    color: var(--cor7);
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    text-align: justify;
+    max-width: 100%;
+    word-wrap: break-word;
 }
 
 figure {
@@ -59,25 +81,6 @@ figure > figcaption {
     font-family: var(--fonte-padrao);
     font-size: 0.8em;
     margin: 0px 0px 20px 0px;
-}
-
-#referencia {
-    margin: 0px 0px 20px 0px;
-    max-width: 100%;
-    word-wrap: break-word;
-}
-
-ul > li {
-    list-style-type: none;
-    margin: 10px 0px;
-}
-
-a {
-    font-family: var(--fonte-padrao);
-    text-align: justify;
-    color: var(--cor6);
-    max-width: 100%;
-    word-wrap: break-word;
 }
 
 footer {

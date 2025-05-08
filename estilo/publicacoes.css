@@ -5,17 +5,17 @@ nav {
 }
 
 main > h1 {
+    font-family: var(--fonte-destaque);
     margin: 0px 0px 20px 0px;
 }
 
-ul > li {
+main > ul > li {
     list-style-type: none;
-    margin: 10px 0px;
+    margin: 0px 0px 10px 0px;
 }
 
-a {
-    font-family: var(--fonte-destaque);
+main > ul > li > a {
+    color: var(--cor7);
+    font-family: var(--fonte-padrao);
     font-size: 1.2em;
-    text-align: justify;
-    color: var(--cor6);
 }

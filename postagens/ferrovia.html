@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anhanguera-GO</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../estilo/style.css">
+    <link rel="stylesheet" href="../estilo/posts.css">
+    <link rel="stylesheet" href="../estilo/media-query.css">
+    <link rel="shortcut icon" href="../imagens/brasao-anhanguera.png" type="image/x-icon">   
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Museu Virtual de Anhanguera</h1>
+    </header>
+    <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+    
+    <div id="menu-container"></div>
+    <script>
+        fetch('menu-publicacoes.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('menu-container').innerHTML = data;
+        })
+        .catch(error => console.error('Erro ao carregar o menu: ', error));
+    </script>
+    <main>
+        <h1>Ferrovia</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi labore cum ducimus pariatur alias illo magni quia itaque atque quisquam eaque impedit id eum iste, dicta excepturi recusandae voluptates doloremque!</p>
+
+        <figure>
+            <figcaption><strong>Figura 1</strong> – Entrada da Ponte Emilio Schnoor - Margem Goiana</figcaption>
+            <img src="../imagens/ferrovia/Foto_2024-06-06_214629.jpg" alt="Entrada goiana da ponte Emilio Schnoor com duas mulheres em frente à ponte.">
+        </figure>
+
+        <div class="fonte">
+            Fonte: Fotografias da comunidade anhanguerina – 2024. <br>
+            Entrada da Ponte Emílio Schnoor pela margem goiana do Rio Paranaíba.
+        </div>
+    </main>
+</body>
+</html>
