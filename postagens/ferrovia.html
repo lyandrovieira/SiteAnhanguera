@@ -10,21 +10,16 @@
     <link rel="stylesheet" href="../estilo/media-query.css">
     <link rel="shortcut icon" href="../imagens/brasao-anhanguera.png" type="image/x-icon">   
 </head>
+
 <body onresize="mudouTamanho()">
     <header>
         <h1>Museu Virtual de Anhanguera</h1>
     </header>
+
     <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
     
     <div id="menu-container"></div>
-    <script>
-        fetch('menu-publicacoes.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('menu-container').innerHTML = data;
-        })
-        .catch(error => console.error('Erro ao carregar o menu: ', error));
-    </script>
+
     <main>
         <h1>Ferrovia</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi labore cum ducimus pariatur alias illo magni quia itaque atque quisquam eaque impedit id eum iste, dicta excepturi recusandae voluptates doloremque!</p>
@@ -33,11 +28,26 @@
             <figcaption><strong>Figura 1</strong> – Entrada da Ponte Emilio Schnoor - Margem Goiana</figcaption>
             <img src="../imagens/ferrovia/Foto_2024-06-06_214629.jpg" alt="Entrada goiana da ponte Emilio Schnoor com duas mulheres em frente à ponte.">
         </figure>
-
         <div class="fonte">
             Fonte: Fotografias da comunidade anhanguerina – 2024. <br>
             Entrada da Ponte Emílio Schnoor pela margem goiana do Rio Paranaíba.
         </div>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt distinctio facere ratione reprehenderit veritatis earum, ipsa quam accusamus animi nostrum dolorem in doloribus vitae temporibus minus error labore nihil? Commodi.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt distinctio facere ratione reprehenderit veritatis earum, ipsa quam accusamus animi nostrum dolorem in doloribus vitae temporibus minus error labore nihil? Commodi.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt distinctio facere ratione reprehenderit veritatis earum, ipsa quam accusamus animi nostrum dolorem in doloribus vitae temporibus minus error labore nihil? Commodi.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt distinctio facere ratione reprehenderit veritatis earum, ipsa quam accusamus animi nostrum dolorem in doloribus vitae temporibus minus error labore nihil? Commodi.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt distinctio facere ratione reprehenderit veritatis earum, ipsa quam accusamus animi nostrum dolorem in doloribus vitae temporibus minus error labore nihil? Commodi.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt distinctio facere ratione reprehenderit veritatis earum, ipsa quam accusamus animi nostrum dolorem in doloribus vitae temporibus minus error labore nihil? Commodi.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt distinctio facere ratione reprehenderit veritatis earum, ipsa quam accusamus animi nostrum dolorem in doloribus vitae temporibus minus error labore nihil? Commodi.</p>
     </main>
+    
+    <footer>
+        Site criado por Lyandro Barbosa Vieira de Melo em 17/08/2024. Inaugarado em --/--/----.
+    </footer>
+    
+    <button onclick="topFunction()" id="topBtn" title="Voltar ao topo">↑</button>
+
+    <script src="../scripts/scripts-publicacoes.js"></script>
 </body>
 </html>

@@ -14,17 +14,10 @@
     <header>
         <h1>Museu Virtual de Anhanguera</h1>
     </header>
+    
     <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
 
     <div id="menu-container"></div>
-    <script>
-        fetch('menu.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('menu-container').innerHTML = data;
-            })
-            .catch(error => console.error('Erro ao carregar menu: ', error));
-    </script>
     
     <main>
         <h1>Lista de Publicações</h1>
@@ -45,25 +38,33 @@
                 <a href="">Linha de teste</a>
             </li>
         </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim nihil quibusdam, non officiis suscipit corporis cumque qui molestiae earum veritatis consequuntur. Repellat sint necessitatibus laborum sed iusto porro molestias!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim nihil quibusdam, non officiis suscipit corporis cumque qui molestiae earum veritatis consequuntur. Repellat sint necessitatibus laborum sed iusto porro molestias!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim nihil quibusdam, non officiis suscipit corporis cumque qui molestiae earum veritatis consequuntur. Repellat sint necessitatibus laborum sed iusto porro molestias!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim nihil quibusdam, non officiis suscipit corporis cumque qui molestiae earum veritatis consequuntur. Repellat sint necessitatibus laborum sed iusto porro molestias!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim nihil quibusdam, non officiis suscipit corporis cumque qui molestiae earum veritatis consequuntur. Repellat sint necessitatibus laborum sed iusto porro molestias!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim nihil quibusdam, non officiis suscipit corporis cumque qui molestiae earum veritatis consequuntur. Repellat sint necessitatibus laborum sed iusto porro molestias!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim nihil quibusdam, non officiis suscipit corporis cumque qui molestiae earum veritatis consequuntur. Repellat sint necessitatibus laborum sed iusto porro molestias!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim nihil quibusdam, non officiis suscipit corporis cumque qui molestiae earum veritatis consequuntur. Repellat sint necessitatibus laborum sed iusto porro molestias!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim nihil quibusdam, non officiis suscipit corporis cumque qui molestiae earum veritatis consequuntur. Repellat sint necessitatibus laborum sed iusto porro molestias!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim nihil quibusdam, non officiis suscipit corporis cumque qui molestiae earum veritatis consequuntur. Repellat sint necessitatibus laborum sed iusto porro molestias!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim nihil quibusdam, non officiis suscipit corporis cumque qui molestiae earum veritatis consequuntur. Repellat sint necessitatibus laborum sed iusto porro molestias!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim nihil quibusdam, non officiis suscipit corporis cumque qui molestiae earum veritatis consequuntur. Repellat sint necessitatibus laborum sed iusto porro molestias!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim nihil quibusdam, non officiis suscipit corporis cumque qui molestiae earum veritatis consequuntur. Repellat sint necessitatibus laborum sed iusto porro molestias!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim nihil quibusdam, non officiis suscipit corporis cumque qui molestiae earum veritatis consequuntur. Repellat sint necessitatibus laborum sed iusto porro molestias!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim nihil quibusdam, non officiis suscipit corporis cumque qui molestiae earum veritatis consequuntur. Repellat sint necessitatibus laborum sed iusto porro molestias!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim nihil quibusdam, non officiis suscipit corporis cumque qui molestiae earum veritatis consequuntur. Repellat sint necessitatibus laborum sed iusto porro molestias!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim nihil quibusdam, non officiis suscipit corporis cumque qui molestiae earum veritatis consequuntur. Repellat sint necessitatibus laborum sed iusto porro molestias!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim nihil quibusdam, non officiis suscipit corporis cumque qui molestiae earum veritatis consequuntur. Repellat sint necessitatibus laborum sed iusto porro molestias!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim nihil quibusdam, non officiis suscipit corporis cumque qui molestiae earum veritatis consequuntur. Repellat sint necessitatibus laborum sed iusto porro molestias!</p>
     </main>
+
     <footer>
         Site criado por Lyandro Barbosa Vieira de Melo em 17/08/2024. Inaugarado em --/--/----.
     </footer>
-    <script>
-        function mudouTamanho() {
-            if (window.innerWidth >= 694) {
-                menu.style.display = 'block'
-            } else {
-                menu.style.display = 'none'
-            }
-        }
-        function clickMenu() {
-            if (menu.style.display == 'block') {
-                menu.style.display = 'none'
-            } else {
-                menu.style.display = 'block'
-            }
-        }
-    </script>
+    
+    <button onclick="topFunction()" id="topBtn" title="Voltar ao topo">↑</button>
+
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>

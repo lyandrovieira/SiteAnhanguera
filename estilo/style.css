@@ -132,7 +132,7 @@ article {
 }
 
 footer {
-    background-color: #e9c377;
+    background-color: var(--cor8);
     color: var(--cor7);
     font-family: var(--fonte-padrao);
     font-size: 0.8em;
@@ -142,4 +142,24 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+#topBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    z-index: 99;
+    font-size: 25px;
+    background-color: var(--cor6);
+    color: var(--cor0);
+    padding: 8px 16px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#topBtn:hover {
+    background-color: var(--cor2);
+    color: var(--cor7);
 }

@@ -10,42 +10,40 @@
     <link rel="stylesheet" href="estilo/media-query.css">
     <link rel="shortcut icon" href="imagens/brasao-anhanguera.png" type="image/x-icon">
 </head>
+
 <body onresize="mudouTamanho()">
     <header>
         <h1>Museu Virtual de Anhanguera</h1>
     </header>
+
     <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
     
     <div id="menu-container"></div>
-    <script>
-        fetch('menu.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('menu-container').innerHTML = data;
-            })
-            .catch(error => console.error('Erro ao carregar menu: ', error));
-    </script>
+
     <main>
-        
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio delectus corporis eos labore soluta hic ad corrupti ratione, repellat cupiditate, doloremque culpa temporibus laudantium alias! Saepe asperiores at in dolor.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio delectus corporis eos labore soluta hic ad corrupti ratione, repellat cupiditate, doloremque culpa temporibus laudantium alias! Saepe asperiores at in dolor.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio delectus corporis eos labore soluta hic ad corrupti ratione, repellat cupiditate, doloremque culpa temporibus laudantium alias! Saepe asperiores at in dolor.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio delectus corporis eos labore soluta hic ad corrupti ratione, repellat cupiditate, doloremque culpa temporibus laudantium alias! Saepe asperiores at in dolor.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio delectus corporis eos labore soluta hic ad corrupti ratione, repellat cupiditate, doloremque culpa temporibus laudantium alias! Saepe asperiores at in dolor.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio delectus corporis eos labore soluta hic ad corrupti ratione, repellat cupiditate, doloremque culpa temporibus laudantium alias! Saepe asperiores at in dolor.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio delectus corporis eos labore soluta hic ad corrupti ratione, repellat cupiditate, doloremque culpa temporibus laudantium alias! Saepe asperiores at in dolor.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio delectus corporis eos labore soluta hic ad corrupti ratione, repellat cupiditate, doloremque culpa temporibus laudantium alias! Saepe asperiores at in dolor.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio delectus corporis eos labore soluta hic ad corrupti ratione, repellat cupiditate, doloremque culpa temporibus laudantium alias! Saepe asperiores at in dolor.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio delectus corporis eos labore soluta hic ad corrupti ratione, repellat cupiditate, doloremque culpa temporibus laudantium alias! Saepe asperiores at in dolor.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio delectus corporis eos labore soluta hic ad corrupti ratione, repellat cupiditate, doloremque culpa temporibus laudantium alias! Saepe asperiores at in dolor.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio delectus corporis eos labore soluta hic ad corrupti ratione, repellat cupiditate, doloremque culpa temporibus laudantium alias! Saepe asperiores at in dolor.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio delectus corporis eos labore soluta hic ad corrupti ratione, repellat cupiditate, doloremque culpa temporibus laudantium alias! Saepe asperiores at in dolor.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio delectus corporis eos labore soluta hic ad corrupti ratione, repellat cupiditate, doloremque culpa temporibus laudantium alias! Saepe asperiores at in dolor.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio delectus corporis eos labore soluta hic ad corrupti ratione, repellat cupiditate, doloremque culpa temporibus laudantium alias! Saepe asperiores at in dolor.</p>
     </main>
+
     <footer>
         Site criado por Lyandro Barbosa Vieira de Melo em 17/08/2024. Inaugarado em --/--/----.
     </footer>
-    <script>
-        function mudouTamanho() {
-            if (window.innerWidth >= 694) {
-                menu.style.display = 'block'
-            } else {
-                menu.style.display = 'none'
-            }
-        }
-        function clickMenu() {
-            if (menu.style.display == 'block') {
-                menu.style.display = 'none'
-            } else {
-                menu.style.display = 'block'
-            }
-        }
-    </script>
+
+    <button onclick="topFunction()" id="topBtn" title="Voltar ao topo">↑</button>
+
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>

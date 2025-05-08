@@ -10,21 +10,16 @@
     <link rel="stylesheet" href="../estilo/media-query.css">
     <link rel="shortcut icon" href="../imagens/brasao-anhanguera.png" type="image/x-icon">   
 </head>
+
 <body onresize="mudouTamanho()">
     <header>
         <h1>Museu Virtual de Anhanguera</h1>
     </header>
+
     <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
     
     <div id="menu-container"></div>
-    <script>
-        fetch('menu-publicacoes.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('menu-container').innerHTML = data;
-        })
-        .catch(error => console.error('Erro ao carregar o menu: ', error));
-    </script>
+    
     <main>
         <h1>Histórico da casa da CELG em Anhanguera-GO.</h1>
         <h2>1.Introdução</h2>
@@ -44,7 +39,6 @@
             <figcaption><strong>Figura 1</strong> – Construção original da Capela São José, década de 1940.</figcaption>
             <img src="../imagens/CELG/igreja sao jose.jpg" alt="Capela São José com a casa da CELG ao fundo">
         </figure>
-
         <div class="fonte">
             Fonte: Fotografias da comunidade anhanguerina – 2024. <br>
             Em primeiro plano, vemos um cidadão não identificado próximo à capela. Ao fundo, destaca-se a casa da CELG.
@@ -62,7 +56,6 @@
             <figcaption><strong>Figura 2</strong> – Primeira visita de Nossa Senhora de Fátima à cidade de Anhanguera, em meados de 1964. Heráclita em destaque.</figcaption>
             <img src="../imagens/CELG/visita.jpg" alt="Comunidade anhanguerina reunida em frente à Capela São José">           
         </figure>
-
         <div class="fonte">Fonte – Fotografias da comunidade Anhanguerina. 2024.</div>
 
         <p>A Companhia Prada de Eletricidade funcionou em Anhanguera até por volta de 1973, ano em que a empresa foi encampada pelo Ministério de Minas e Energia. Pela nova resolução do ministério, só poderia haver uma única concessionária de energia em cada estado. Com isso, os direitos de geração e distribuição de energia elétrica da Prada foram transferidos para as estatais CESP, COPEL, CEMIG e ELETROBRAS. Nas cidades da Zona Goiás, citada anteriormente, os direitos foram repassados para a estatal Centrais Elétricas de Goiás S.A(CELG). No dia 10 de agosto de 1973, durante a quinquagésima assembleia extraordinária dos acionistas da CELG, foi autorizada a compra dos bens e imóveis da Companhia Prada de Eletricidade em Anhanguera e demais cidades da Zona Goiás da Prada. A decisão foi homologada em 22 de agosto de 1973 com a publicação da ata da assembleia no Diário Oficial do Estado de Goiás, conforme <strong>Figura 3</strong> e <strong>Figura 4</strong>.</p>
@@ -71,14 +64,12 @@
             <figcaption><strong>Figura 3</strong> – Ata da quinquagésima assembleia de acionistas da CELG. Página 15 do Diário Oficial de Goiás do dia 22/08/1973.</figcaption>
             <img src="../imagens/CELG/pagina-15.png" alt="Ata de assembleia da CELG - Página 15">            
         </figure>
-
         <div class="fonte">Fonte – Memorial da Eletricidade[3].2025.</div>
 
         <figure>
             <figcaption><strong>Figura 4</strong> – Ata da quinquagésima assembleia de acionistas da CELG. Página 16 do Diário Oficial de Goiás do dia 22/08/1973.</figcaption>
             <img src="../imagens/CELG/pagina-16.png" alt="Ata de assembleia da CELG - Página 16">           
         </figure>
-
         <div class="fonte">Fonte – Memorial da Eletricidade[3].2025.</div>
 
         <h3>2.2.Resumo sobre o período de funcionamento da CELG em Anhanguera</h3>
@@ -105,21 +96,18 @@
             <figcaption><strong>Figura 5</strong> – Estado atual do telhado da residência.</figcaption>
             <img src="../imagens/CELG/telhado-1.JPG" alt="Telhado da casa da CELG">            
         </figure>
-
         <div class="fonte">Fonte: O autor. 07/02/2025.</div>
 
         <figure>
             <figcaption><strong>Figura 6</strong> – Estado atual do telhado da residência.</figcaption>
             <img src="../imagens/CELG/telhado-2.JPG" alt="Telhado da casa da CELG">           
         </figure>
-
         <div class="fonte">Fonte: O autor. 07/02/2025.</div>
 
         <figure>
             <figcaption><strong>Figura 7</strong> – Estado atual do telhado da residência.</figcaption>
             <img src="../imagens/CELG/telhado-3.JPG" alt="Telhado da casa da CELG">           
         </figure>
-        
         <div class="fonte">Fonte: O autor. 07/02/2025.</div>
 
         <h2>4.Apelo pela Preservação do Local.</h2>
@@ -138,24 +126,13 @@
         </div>
 
     </main>
+
     <footer>
         Site criado por Lyandro Barbosa Vieira de Melo em 17/08/2024. Inaugarado em --/--/----.
     </footer>
-    <script>
-        function mudouTamanho() {
-            if (window.innerWidth >= 694) {
-                menu.style.display = 'block'
-            } else {
-                menu.style.display = 'none'
-            }
-        }
-        function clickMenu() {
-            if (menu.style.display == 'block') {
-                menu.style.display = 'none'
-            } else {
-                menu.style.display = 'block'
-            }
-        }
-    </script>
+    
+    <button onclick="topFunction()" id="topBtn" title="Voltar ao topo">↑</button>
+
+    <script src="../scripts/scripts-publicacoes.js"></script>
 </body>
 </html>

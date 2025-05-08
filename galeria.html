@@ -10,23 +10,19 @@
     <link rel="stylesheet" href="estilo/media-query.css">
     <link rel="shortcut icon" href="imagens/brasao-anhanguera.png" type="image/x-icon">
 </head>
+
 <body onresize="mudouTamanho()">
     <header>
         <h1>Museu Virtual de Anhanguera</h1>
     </header>
+
     <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
     
     <div id="menu-container"></div>
-    <script>
-        fetch('menu.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('menu-container').innerHTML = data;
-            })
-            .catch(error => console.error('Erro ao carregar menu: ', error));
-    </script>
+    
     <main>
         <h1>Galeria de Fotos de Anhanguera</h1>
+
         <p>O conteúdo desta página consiste em uma série de fotografias que mostram diversos locais, tradições e demais aspectos que marcaram e ainda marcam a história de nossa querida Anhanguera.</p>
         <p>A galeria é organizada em seções, sendo cada uma delas referente a um aspecto relevante para a história municipal. Para acessar as demais imagens disponíveis sobre cada uma das seções, basta clicar nos botões <strong>Ver Mais</strong> ao final de cada seção.</p>
             
@@ -39,6 +35,7 @@
         <div class="botao">
             <a href="postagens/ferrovia.html" class="botao">Ver Mais</a>
         </div>
+
         <h2>Comércio em grande escala: a Cerâmica Anhanguera e a Charqueada Santa Cecília</h2>
         <div class="imagens">
             <img src="imagens/charqueada-ceramica/charqueada-antiga.JPG" alt="Charqueada Santa Cecília">
@@ -48,6 +45,7 @@
         <div class="botao">
             <a href="#" class="botao">Ver Mais</a>
         </div>
+
         <h2>Art Déco: O Antes e o Depois de Algumas Contruções Marcantes da Arquitetura Anhanguerina</h2>
         <div class="imagens">
             <img src="imagens/arquitetura/Camara.jpg" class="retrato" alt="Câmara municipal e antigo cinema">
@@ -58,24 +56,13 @@
             <a href="#" class="botao">Ver Mais</a>
         </div>
     </main>
+
     <footer>
         Site criado por Lyandro Barbosa Vieira de Melo em 17/08/2024. Inaugarado em --/--/----.
     </footer>
-    <script>
-        function mudouTamanho() {
-            if (window.innerWidth >= 694) {
-                menu.style.display = 'block'
-            } else {
-                menu.style.display = 'none'
-            }
-        }
-        function clickMenu() {
-            if (menu.style.display == 'block') {
-                menu.style.display = 'none'
-            } else {
-                menu.style.display = 'block'
-            }
-        }
-    </script>
+
+    <button onclick="topFunction()" id="topBtn" title="Voltar ao topo">↑</button>
+
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>
