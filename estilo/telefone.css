@@ -7,7 +7,7 @@ nav {
 table {
     width: 450px;
     font-family: var(--fonte-padrao);
-    border-bottom: 1px solid var(--cor6);
+    border-bottom: 1px solid var(--cor9);
     margin: auto;
 }
 
@@ -15,17 +15,17 @@ caption {
     font-family: var(--fonte-padrao);
     font-size: 1.1em;
     padding: 5px;
-    background-color: var(--cor2);
+    background-color: var(--cor8);
 }
 
 th {    
-    color: var(--cor1);
-    background-color: var(--cor6);
+    color: var(--cor7);
+    background-color: var(--cor8);
     padding: 5px;
 }
 
 tr:nth-child(2n) {
-    background-color: var(--cor1);
+    background-color: var(--cor8);
 }
 
 td {

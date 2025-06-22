@@ -102,8 +102,8 @@ footer {
     right: 10px;
     z-index: 99;
     font-size: 25px;
-    background-color: var(--cor6);
-    color: var(--cor0);
+    background-color: var(--cor9);
+    color: var(--cor7);
     padding: 8px 16px;
     border: none;
     border-radius: 40px;
@@ -112,6 +112,6 @@ footer {
 }
 
 #topBtn:hover {
-    background-color: var(--cor2);
+    background-color: var(--cor8);
     color: var(--cor7);
 }

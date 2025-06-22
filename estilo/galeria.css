@@ -27,18 +27,18 @@ div.botao {
 }
 
 img {
-    width: 250px;
-    height: 167px;
+    width: 374px;
+    height: 250px;
     transition: scale 0.3s;
 }
 
 img.retrato {
-    width: 167px;
-    height: 250px;
+    width: 250px;
+    height: 374px;
 }
 
 img:hover {
-    scale: 1.8;
+    scale: 1.2;
 }
 
 a.botao {
@@ -55,3 +55,4 @@ a.botao:hover {
     color: var(--cor7);
     background-color: var(--cor2);
 }
+    
