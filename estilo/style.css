@@ -39,8 +39,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 110px;
-    padding: 20px;
+    height: 150px;
 }
 
 header h1 {
@@ -48,7 +47,8 @@ header h1 {
     font-family: var(--fonte-destaque);
     font-size: 2.7em;
     text-align: center;
-    padding-top: 20px;
+    vertical-align: middle;
+    padding-top: 30px;
 }
 
 span#burguer {
@@ -66,6 +66,7 @@ span#burguer:hover {
 }
 
 nav {
+    position: relative;
     background-color: var(--cor8);
     box-shadow: 0px 5px 7px rgba(231, 208, 104, 0.26);
     display: block;
@@ -148,8 +149,8 @@ footer {
 
 #topBtn {
     position: fixed;
-    bottom: 30px;
-    right: 10px;
+    bottom: 50px;
+    right: 50px;
     z-index: 99;
     font-size: 25px;
     background-color: var(--cor9);
@@ -187,4 +188,26 @@ footer {
 
 #burguer.fixed-navbar:hover {
     background: var(--cor8);
-}   
+}
+
+.font-controls {
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 0.5em;
+}
+
+.font-button {
+    width: 30px;
+    height: 25px;
+    font-weight: bold;
+    background-color: var(--cor8);
+    border: none;
+    border-radius: 5px;
+}
+
+.font-button:hover {
+    background-color: var(--cor9);
+}

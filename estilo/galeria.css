@@ -29,6 +29,7 @@ div.botao {
 img {
     width: 374px;
     height: 250px;
+    margin: 15px 3px;
     transition: scale 0.3s;
 }
 
