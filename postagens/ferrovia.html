@@ -21,7 +21,10 @@
     <div id="menu-container"></div>
 
     <main>
-        <h1>Ferrovia</h1>
+        <h1>Ferrovia - Página de Teste</h1>
+
+        <div id="autor">por Lyandro Barbosa Vieira de Melo</div>
+
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi labore cum ducimus pariatur alias illo magni quia itaque atque quisquam eaque impedit id eum iste, dicta excepturi recusandae voluptates doloremque!</p>
 
         <figure>
@@ -33,6 +36,18 @@
             Entrada da Ponte Emílio Schnoor pela margem goiana do Rio Paranaíba.
         </div>
 
+        <!-- Seção de Comentários -->
+        <section id="comentarios">
+            <h2>Deixe seu Comentário</h2>
+            <form id="comentarioForm">
+                <input type="text" id="nome" placeholder="Seu nome:">
+                <textarea id="mensagem" placeholder="Escreva seu comentário:" required></textarea>
+                <button type="submit">Enviar Comentário</button>
+            </form>
+            <h2>Comentários Anteriores</h2>
+            <ul id="listaComentarios"></ul>
+        </section>
+
         <a id="voltar" href="javascript:history.back()">Voltar</a>
     </main>
     
@@ -42,6 +57,13 @@
     
     <button onclick="topFunction()" id="topBtn" title="Voltar ao topo">↑</button>
 
-    <script src="../scripts/scripts-publicacoes.js"></script>
+    <script src="../scripts/scripts.js"></script>
+    <script src="../scripts/script-publicacoes.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+
+    <script src="../scripts/scripts-comentarios.js"></script>
 </body>
 </html>

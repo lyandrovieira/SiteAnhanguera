@@ -23,8 +23,9 @@
     <main>
         <h1>Galeria de Fotos de Anhanguera</h1>
 
-        <p>O conteúdo desta página consiste em uma série de fotografias que mostram diversos locais, tradições e demais aspectos que marcaram e ainda marcam a história de nossa querida Anhanguera.</p>
-        <p>A galeria é organizada em seções, sendo cada uma delas referente a um aspecto relevante para a história municipal. Para acessar as demais imagens disponíveis sobre cada uma das seções, basta clicar nos botões <strong>Ver Mais</strong> ao final de cada seção.</p>
+        <p>O conteúdo desta página consiste em uma série de fotografias que mostram diversos moradores antigos, locais, tradições e demais aspectos que marcaram e ainda marcam a história de nossa querida Anhanguera. A galeria é organizada em seções, sendo cada uma delas referente a um aspecto relevante para a história municipal.</p>
+        
+        <!--<p>Para acessar as demais imagens disponíveis sobre cada uma das seções, basta clicar nos botões <a class="botao">Ver Mais</a> ao final de cada seção.</p>-->
             
         <h2>O Km 53 da Estrada de Ferro Goyaz</h2>
         <div class="imagens">
@@ -33,7 +34,7 @@
             <img src="imagens/ferrovia/Foto_2024-06-06_214951.jpg" alt="Estação Anhanguera">       
         </div>
         <div class="botao">
-            <a href="postagens/ferrovia.html" class="botao">Ver Mais</a>
+            <a href="#" class="botao">Ver Mais</a>
         </div>
 
         <h2>Comércio em grande escala: a Cerâmica Anhanguera e a Charqueada Santa Cecília</h2>
@@ -66,6 +67,18 @@
         <div class="botao">
             <a href="#" class="botao">Ver Mais</a>
         </div>
+
+        <!-- Seção de Comentários -->
+        <section id="comentarios">
+            <h2>Deixe seu Comentário</h2>
+            <form id="comentarioForm">
+                <input type="text" id="nome" placeholder="Seu nome:">
+                <textarea id="mensagem" placeholder="Escreva seu comentário:" required></textarea>
+                <button type="submit">Enviar Comentário</button>
+            </form>
+            <h2>Comentários Anteriores</h2>
+            <ul id="listaComentarios"></ul>
+        </section>
     </main>
 
     <footer>
@@ -75,5 +88,12 @@
     <button onclick="topFunction()" id="topBtn" title="Voltar ao topo">↑</button>
 
     <script src="scripts/scripts.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+
+    <script src="scripts/scripts-comentarios.js"></script>
+    <script src="scripts/script-menu.js"></script>
 </body>
 </html>

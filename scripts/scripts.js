@@ -1,11 +1,3 @@
-// Carregamento do menu
-fetch('menu.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('menu-container').innerHTML = data;
-    })
-    .catch(error => console.error('Erro ao carregar o menu: ', error));
-
 // Mostrar ou esconder menu dependendo do tamanho da tela
 function mudouTamanho() {
     const menu = document.getElementById('menu');

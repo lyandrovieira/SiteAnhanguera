@@ -211,3 +211,10 @@ footer {
 .font-button:hover {
     background-color: var(--cor9);
 }
+
+.sociais {
+    width:20px;
+    height:20px;
+    vertical-align: middle;
+    display: inline-block;
+}

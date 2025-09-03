@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anhanguera-GO</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../estilo/style.css">
+    <link rel="stylesheet" href="../estilo/posts.css">
+    <link rel="stylesheet" href="../estilo/publicacoes.css">
+    <link rel="stylesheet" href="../estilo/media-query.css">
+    <link rel="shortcut icon" href="../imagens/brasao-anhanguera.png" type="image/x-icon">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Museu Virtual de Anhanguera</h1>
+    </header>
+
+    <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">Menu</span>
+
+    <div id="menu-container"></div>
+
+    <main>
+        <h1>A Pessoa Por Detrás da Rua</h1>
+
+        <p>Queridos leitores,</p>
+
+        <p>A partir de 1935, as ruas construídas na "Anhanguera nova" receberam números, em vez de nomes. Após algumas décadas, as ruas em questão começaram a receber nomes de moradores e ex-moradores ilustres e muito queridos na comunidade. Entretanto, pela ausência de registros históricos ao longo do desenvolvimento do município, hoje não sabemos quase nada sobre tais moradores. Para corrigir essa falta de registros, um tanto quanto desrespeitosa à memória e à identidade do povo anhanguerino, venho apresentar a vocês esta série de textos na qual apresentarei um pouco da vida e dos feitos das pessoas cujo nomes foram dados às ruas do atual centro de Anhanguera. Boa leitura!</p>
+
+        <ul>
+            <!--<li><a href="ruas-v1/belchior.html">Avenida Belchior de Godoy</a></li>-->
+
+            <!--<li><a href="ruas-v1/humberto.html">Praça Humberto Ferreira de Carvalho Alves</a></li>-->
+
+            <!--<li><a href="ruas-v1/abilio.html">Rua Abilio Gonçalves Rios</a></li>-->
+
+            <!--<li><a href="ruas-v1/benedita.html">Rua Benedita Preta</a></li>-->
+
+            <!--<li><a href="ruas-v1/fabio.html">Rua Fábio Pires</a></li>-->
+
+            <li><a href="ruas-v1/othelo.html">Rua Othelo Del Favero</a></li>
+
+            <!--<li><a href="ruas-v1/julia.html">Rua Professora Júlia de Brito</a></li>-->
+            
+            <!--<li><a href="ruas-v1/saint-clair.html">Rua Sain't Clair Lemos de Morais</a></li>-->
+
+            <!--<li><a href="ruas-v1/dario.html">Rua Senador Dário de Paiva</a></li>-->
+        </ul>
+
+        <a id="voltar" href="javascript:history.back()">Voltar</a>
+    </main>
+
+    <footer>
+        Criado por Lyandro Barbosa Vieira de Melo. Copyright © 2024.
+    </footer>
+
+    <button onclick="topFunction()" id="topBtn" title="Voltar ao topo">↑</button>
+
+    <script src="../scripts/scripts.js"></script>
+    <script src="../scripts/script-publicacoes.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+
+    <script src="../scripts/scripts-comentarios.js"></script>
+</body>
+</html>

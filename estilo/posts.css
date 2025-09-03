@@ -29,6 +29,12 @@ main > h1 {
     margin: 0px 0px 25px 0px;
 }
 
+#autor {
+    text-align: right;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
 main > h2 {
     font-family: var(--fonte-destaque);
     font-size: 1.8em;
@@ -57,6 +63,18 @@ main > h3 {
     text-align: justify;
     max-width: 100%;
     word-wrap: break-word;
+}
+
+#contribuicoes > ul {
+    list-style-type: none;
+}
+
+#contribuicoes > ul > li {
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    text-align: justify;
+    max-width: 100%;
+    padding: 0px 0px 5px 0px;
 }
 
 figure {
@@ -114,4 +132,123 @@ footer {
 #topBtn:hover {
     background-color: var(--cor8);
     color: var(--cor7);
+}
+
+#comentarioForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formResposta {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#comentarioForm input,
+#comentarioForm textarea,
+#comentarioForm button {
+    width: 400px;
+    box-sizing: border-box;
+    font-family: var(--fonte-padrao);
+    font-size: 18px;
+}
+
+.formResposta input, .formResposta textarea {
+    width: 400px;
+    box-sizing: border-box;
+    font-family: var(--fonte-padrao);
+    font-size: 18px;
+}
+
+#comentarioForm input, .formResposta input {
+    height: 37.8px;
+}
+
+#comentarioForm textarea, .formResposta textarea {
+    height: 108px;
+}
+
+#comentarioForm button {
+    height: 21.6px;
+    background-color: var(--cor9);
+    color: var(--cor7);
+    border-width: thin;
+    border-radius: 5px;
+}
+
+#comentarioForm button:hover,
+.btnResponder:hover,
+.btnEnviarResposta:hover,
+.btnCancelarResposta:hover {
+    background-color: var(--cor8);
+    color: var(--cor7);
+}
+
+#listaComentarios {
+    width: 400px;
+    margin: 30px 0px 0px 0px;
+    list-style-type: none;
+    font-family: var(--fonte-padrao);
+}
+
+.listaRespostas {
+    margin: 8px 0px 0px 24px;
+    list-style-type: none;
+    font-family: var(--fonte-padrao);
+}
+
+#listaComentarios > li, .listaRespostas > li {
+    padding-bottom: 15px;
+}
+
+#comentarios h2 {
+    font-family: var(--fonte-destaque);
+    font-size: 1.8em;
+    text-align: left;
+    margin: 30px 0px 10px 0px;
+}
+
+.btnResponder,
+.btnEnviarResposta,
+.btnCancelarResposta {
+    height: 21.6px;
+    background-color: var(--cor9);
+    color: var(--cor7);
+    font-family: var(--fonte-padrao);
+    font-size: 16px;
+    border-width: thin;
+    border-radius: 5px;
+}
+
+.btnResponder,
+.btnCancelarResposta {
+    width: 150px;
+    margin: 0px 0px 0px 10px;
+}
+
+#voltar {
+    font-family: var(--fonte-destaque);
+    text-decoration: none;
+    padding: 6px;
+    border-width: thin;
+    border-radius: 5px;
+    color: var(--cor7);
+    background-color: var(--cor9);
+}
+
+#voltar:hover {
+    color: var(--cor7);
+    background-color: var(--cor8);
+}
+
+sup {
+    font-size: 12px;
+    vertical-align: super;
+}
+
+.sobrescrito {
+    color: var(--cor7);
+    text-decoration: none;
 }
