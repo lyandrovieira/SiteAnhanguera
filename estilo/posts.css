@@ -252,3 +252,7 @@ sup {
     color: var(--cor7);
     text-decoration: none;
 }
+
+.quebra-paragrafo{
+    text-indent: 0;
+}
