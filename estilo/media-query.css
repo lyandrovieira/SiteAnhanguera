@@ -8,6 +8,7 @@
 
     nav {
         display: block;
+        position: relative;
     }
 
     nav > ul > li {
@@ -17,6 +18,21 @@
     nav > ul > li > a {
         padding: 10px;
         border-radius: 5px;
+    }
+
+    /* Posicionar os botões de fonte absolutamente em altas resoluções */
+    nav > ul > li.font-controls-item {
+        position: absolute;
+        right: 1em;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0;
+        border-top: none;
+    }
+
+    .font-controls {
+        position: static;
+        justify-content: flex-end;
     }
 
     #topBtn {

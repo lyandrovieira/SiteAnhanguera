@@ -190,13 +190,36 @@ footer {
     background: var(--cor8);
 }
 
+/* Estilos padrão para resoluções pequenas */
+nav > ul > li.font-controls-item {
+    text-align: center;
+    padding: 10px 0px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .font-controls {
-    position: absolute;
-    right: 1em;
-    top: 50%;
-    transform: translateY(-50%);
+    position: static;
+    transform: none;
     display: flex;
+    justify-content: center;
     gap: 0.5em;
+}
+
+.font-button {
+    background-color: var(--cor9);
+    color: var(--cor7);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
+    transition-duration: 0.4s;
+}
+
+.font-button:hover {
+    background-color: var(--cor8);
+    color: var(--cor7);
 }
 
 .font-button {

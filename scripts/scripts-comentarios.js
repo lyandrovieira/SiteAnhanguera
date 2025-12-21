@@ -24,23 +24,35 @@ const paginaAtual = window.location.pathname.split('/').pop().replace('.html', '
 const db = firebase.database();
 const comentariosRef = db.ref('comentarios-' + paginaAtual);
 
+
+// Função para escapar HTML (sanitização básica)
+function escapeHTML(str) {
+    return String(str).replace(/[&<>"']/g, function(m) {
+        return ({
+            '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+        })[m];
+    });
+}
+
 // Função para criar o formulário de resposta
 function criarFormResposta(parentKey) {
     const form = document.createElement('form');
     form.className = 'formResposta';
     form.innerHTML = `
-        <input type="text" class="nomeResposta" placeholder="Seu nome:">
-        <textarea class="mensagemResposta" placeholder="Escreva sua resposta:" required></textarea>
+        <input type="text" class="nomeResposta" placeholder="Seu nome:" maxlength="40">
+        <textarea class="mensagemResposta" placeholder="Escreva sua resposta:" required maxlength="500"></textarea>
         <button type="submit" class="btnEnviarResposta">Enviar Resposta</button>
     `;
     form.onsubmit = function(e) {
         e.preventDefault();
-        const nome = form.querySelector('.nomeResposta').value || 'Anônimo';
-        const mensagem = form.querySelector('.mensagemResposta').value;
-        if (mensagem.trim() === '') return;
+        let nome = form.querySelector('.nomeResposta').value || 'Anônimo';
+        let mensagem = form.querySelector('.mensagemResposta').value;
+        nome = nome.trim().slice(0, 40);
+        mensagem = mensagem.trim().slice(0, 500);
+        if (mensagem === '') return;
         comentariosRef.child(parentKey).child('respostas').push({
-            nome,
-            mensagem,
+            nome: escapeHTML(nome),
+            mensagem: escapeHTML(mensagem),
             data: new Date().toLocaleString()
         });
         // Remove o formulário e restaura o botão responder
@@ -61,7 +73,7 @@ function exibirRespostas(respostas, ul) {
     if (!respostas) return;
     Object.entries(respostas).forEach(([key, resposta]) => {
         const li = document.createElement('li');
-        li.innerHTML = `<strong>${resposta.nome}</strong> <em>(${resposta.data})</em>:<br>${resposta.mensagem}`;
+        li.innerHTML = `<strong>${escapeHTML(resposta.nome)}</strong> <em>(${escapeHTML(resposta.data)})</em>:<br>${escapeHTML(resposta.mensagem)}`;
         ul.appendChild(li);
     });
 }
@@ -74,7 +86,7 @@ comentariosRef.on('value', function(snapshot) {
     if (!comentarios) return;
     Object.entries(comentarios).forEach(([key, comentario]) => {
         const li = document.createElement('li');
-        li.innerHTML = `<strong>${comentario.nome}</strong> <em>(${comentario.data})</em>:<br>${comentario.mensagem}`;
+        li.innerHTML = `<strong>${escapeHTML(comentario.nome)}</strong> <em>(${escapeHTML(comentario.data)})</em>:<br>${escapeHTML(comentario.mensagem)}`;
         // Botão responder/cancelar
         const btnResponder = document.createElement('button');
         btnResponder.textContent = 'Responder';
@@ -107,12 +119,14 @@ comentariosRef.on('value', function(snapshot) {
 // Enviar comentário principal
 document.getElementById('comentarioForm').addEventListener('submit', function(e) {
     e.preventDefault();
-    const nome = document.getElementById('nome').value || 'Anônimo';
-    const mensagem = document.getElementById('mensagem').value;
-    if (mensagem.trim() === '') return;
+    let nome = document.getElementById('nome').value || 'Anônimo';
+    let mensagem = document.getElementById('mensagem').value;
+    nome = nome.trim().slice(0, 40);
+    mensagem = mensagem.trim().slice(0, 500);
+    if (mensagem === '') return;
     comentariosRef.push({
-        nome,
-        mensagem,
+        nome: escapeHTML(nome),
+        mensagem: escapeHTML(mensagem),
         data: new Date().toLocaleString()
     });
     document.getElementById('mensagem').value = '';
